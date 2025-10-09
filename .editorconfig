@@ -1,0 +1,9 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf #tem melhor compatibilidade
+charset = utf-8
+trim_trailing_whitespace = true ;obriga acolocar um espaço apos simbolos ex: "olá, samuel"
+insert_final_newline = true ;obriga a finalizar um arquivo com uma linha em branco
