@@ -5,6 +5,7 @@ const EstiloGlobal = createGlobalStyle`
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: "Inter", sans-serif;
 }
   body{
     padding-top: 80px
@@ -27,5 +28,8 @@ export const Container = styled.div`
 
   main {
     margin-left: 40px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 `
