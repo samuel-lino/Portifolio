@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import { Theme } from './theme/light'
 
 const EstiloGlobal = createGlobalStyle`
   *{
@@ -8,7 +9,8 @@ const EstiloGlobal = createGlobalStyle`
     font-family: "Inter", sans-serif;
 }
   body{
-    padding-top: 80px
+    padding-top: 80px;
+    background-color: ${(props) => (props.theme as Theme).corDeFundo}
   }
 `
 

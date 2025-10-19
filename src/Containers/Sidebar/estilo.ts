@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import EstiloParagrafo from '../../components/paragrafo/estilo'
+import { Theme } from '../../theme/light'
 
 const Estilo = styled.aside`
   text-align: center;
@@ -11,9 +12,9 @@ export const Sub = styled(EstiloParagrafo)`
 
 export const Estilobutton = styled.button`
   font-size: 10px;
-  color: #eee;
+  color: ${(props) => (props.theme as Theme).corDeFundo};
   font-weight: bold;
-  background-color: #282a35;
+  background-color: ${(props) => (props.theme as Theme).corTextoBotao};
   border-radius: 12px;
   padding: 8px;
   cursor: pointer;

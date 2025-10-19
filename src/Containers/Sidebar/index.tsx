@@ -3,7 +3,11 @@ import Paragrafo from '../../components/paragrafo'
 import Titulo from '../../components/Titulo'
 import Estilo, { Estilobutton, SideBarContainer, Sub } from './estilo'
 
-const Sidebar = () => (
+type Props = {
+  mudartheme: () => void
+}
+
+const Sidebar = (props: Props) => (
   <Estilo>
     <SideBarContainer>
       <Avatar />
@@ -14,7 +18,7 @@ const Sidebar = () => (
       <Sub fontSize={12} tipo="Principal">
         Trainer front-end
       </Sub>
-      <Estilobutton>Trocar tema</Estilobutton>
+      <Estilobutton onClick={props.mudartheme}>Trocar tema</Estilobutton>
     </SideBarContainer>
   </Estilo>
 )
