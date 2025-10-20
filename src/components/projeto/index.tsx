@@ -2,11 +2,19 @@ import Paragrafo from '../paragrafo'
 import Titulo from '../Titulo'
 import { Card, Link } from './estilo'
 
-const Projeto = () => (
+type Props = {
+  caminho: string
+  titulo: string
+  sobre: string
+}
+
+const Projeto = (props: Props) => (
   <Card>
-    <Titulo>Projeto de tarefas</Titulo>
-    <Paragrafo tipo="Secundario">Projeto de portifolio usando react</Paragrafo>
-    <Link>Visualizar</Link>
+    <Titulo>{props.titulo}</Titulo>
+    <Paragrafo tipo="Secundario">{props.sobre}</Paragrafo>
+    <Link href={props.caminho} target="_blank">
+      Visualizar
+    </Link>
   </Card>
 )
 

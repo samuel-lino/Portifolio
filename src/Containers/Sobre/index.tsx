@@ -6,9 +6,8 @@ const Sobre = () => (
   <section>
     <Titulo fontSize={16}>Sobre min</Titulo>
     <Paragrafo tipo="Secundario">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod quasi
-      pariatur soluta sequi nulla quos quaerat aut! Iusto, quidem explicabo
-      voluptate dicta quod in suscipit beatae harum saepe sint!
+      Aprendiz em Full Stack Python, competente em Front-end, Godot e
+      JavaScript.
     </Paragrafo>
     <Estilo>
       <img src="https://github-readme-stats.vercel.app/api?username=samuel-lino&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
